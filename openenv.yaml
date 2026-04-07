@@ -1,0 +1,13 @@
+spec_version: 1
+name: sql-analytics-workspace
+version: 0.1.0
+type: space
+runtime: fastapi
+app: server.app:app
+port: 8000
+description: >
+  A multi-step OpenEnv environment where an AI agent acts as a data analyst.
+  The agent must explore a SQLite database (discover tables, examine schemas,
+  spot data quality issues) before writing SQL to answer business questions.
+  Features 4 tasks (easy to very hard), dirty data traps, ambiguous questions,
+  process supervision with exploration rewards, and a deterministic grader.
